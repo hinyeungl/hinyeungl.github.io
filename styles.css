@@ -1,6 +1,73 @@
 html{
     font-family: serif;
-    background: rgb(253, 254, 246);
+    background: rgb(255, 255, 255);
     margin: 0;
+    
 }
+
+
+h1{
+    font-family: Noto Serif;
+    color:#254134;
+    font-size: 100px;
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 45%
+
+}
+
+h3{
+    text-align: center;
+    padding-top: 50%;
+    font-family: Noto Serif;
+    color:#597c6c;
+
+}
+
+.flexbox-grid{
+    display: flex;
+    gap: 10px; 
+}
+
+.column{
+    background-color: rgb(255, 255, 255);
+    padding: 300px 10px;
+    flex: 1;
+    text-align: center;
+}
+
+
+#col-large{
+    background-color: rgb(255, 255, 255);
+    flex-grow: 0.5; 
+}
+
+
+
+/* cite and edited of website for buttons */
+  
+.myButton {
+    /* Color and background */
+    background-color: white;
+    color: #254134;
+    
+    /* Spacing and size */
+    padding: 15px 32px; /* Space between text and border */
+    display: inline-block; /* Allows padding/margin to work correctly */
+    font-size: 16px; /* Text size */
+    
+    /* Aesthetics */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+
+  /* Style for when a user hovers over the button */
+  .myButton:hover {
+    background-color: #ffffff; /* Darker green on hover */
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
 
