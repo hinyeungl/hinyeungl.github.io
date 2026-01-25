@@ -2,6 +2,7 @@ html{
     font-family: serif;
     background: rgb(255, 255, 255);
     margin: 0;
+
     
 }
 
@@ -43,31 +44,96 @@ h3{
 }
 
 
+.logo {
+  position: fixed;
+  top: 20px;     
+  left: 20px;    
+  width: 40px;
+  height: 40px;
+}
 
-/* cite and edited of website for buttons */
+.logo-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+    position: fixed;
+    top: 24px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    height: 32px;
+    font-family: serif;
+}
+
+.left-buttons {
+    left: 48px;
+}
+
+/* the look of right buttons. */
+.right-buttons {
+    right: 48px;
+    gap: 1px;
+}
+
+
+/* cited and edited of website for buttons */
   
 .myButton {
     /* Color and background */
     background-color: white;
-    color: #254134;
+    color: #597c6c;
+    font-family: serif;
+    font-weight: bold;
     
     /* Spacing and size */
-    padding: 15px 32px; /* Space between text and border */
-    display: inline-block; /* Allows padding/margin to work correctly */
-    font-size: 16px; /* Text size */
+    padding: 1px 26px 5px 26px;; /* Space between text and border */
+    height: 60px;
+    display: inline-flex;
+    font-size: 20px; /* Text size */
+    margin-left: 60px;
+    gap: 50px;
+
     
     /* Aesthetics */
     border: none;
-    border-radius: 10px;
+    border-radius: 0px;
     cursor: pointer;
-    text-align: center;
     text-decoration: none;
     transition-duration: 0.4s;
-  }
+    letter-spacing: 0.05em;
+    position: relative; 
+    padding-bottom: 0px;
+    align-items: center;
+    justify-content: center;
 
-  /* Style for when a user hovers over the button */
-  .myButton:hover {
-    background-color: #ffffff; /* Darker green on hover */
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
+}
+
+/* cited youtube video to learn how to hover with the underline feature. */
+.myButton::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #254134;
+  transition: width 1.5s ease;
+}
+
+.myButton:hover::after,
+.myButton.active::after {
+  width: 100%;
+}
+
+.right-buttons {
+  right: 48px; 
+}
+
+
+
+
+
+
 
