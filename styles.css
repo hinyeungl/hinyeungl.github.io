@@ -133,7 +133,31 @@ h3{
 
 
 
+.photo-gallery {
+  display: flex;
+  gap: 10px;                    /* Smaller gaps */
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 100px;           /* More vertical space */
+}
+
+.frame {
+  display: flex;
+  gap: 20px;                    /* Smaller gaps */
+  justify-content: center;
+  padding: 60px 40px;           /* More vertical space */
+  width: 80%;           /* Narrower container */
+  height: 300px;
+  margin: 0 auto;
+  max-width: auto;
+}
 
 
 
 
+
+
+
+
+/* parallax scroll effect */

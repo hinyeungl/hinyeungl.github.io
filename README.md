@@ -12,3 +12,5 @@ My personal site.
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#:~:text=Custom%20values,formenctype - Buttons
 https://www.youtube.com/watch?v=psLRMRaBLI4 - Youtube tutorial
+
+https://codepen.io/cameronknight/pen/qBNvrRQ - Horizontal scroll
