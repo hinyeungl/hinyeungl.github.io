@@ -8,50 +8,38 @@
   <body>
   
     <div class="button left-buttons">
-  <a href="Home.html" class="myButton">Home</a>
-  <button type="Photos" class="myButton">Photos</button>
-
-  </div>
-
-  <div class="button right-buttons">
-    <a href="About.html" class="myButton">About</a>
-    <a href="Contact.html" class="myButton">Contact</a>
-    <a href="Menu.html" class="myButton">Menu</a>
-  </div>
-
-  <div class="logo">
-  <img src="logo.jpg" alt="HY Gallery" class="logo-icon">
-</div>
-
-  <div class="photo-gallery">
-    <div class="frame"><img src="image1.jpg" alt=""></div>
-    <div class="frame"><img src="image2.jpg" alt=""></div>
-    <div class="frame"><img src="image3.jpg" alt=""></div>
-    <div class="frame"><img src="image4.jpg" alt=""></div>
-    <div class="frame"><img src="image5.jpg" alt=""></div>
-    <div class="frame"><img src="image6.jpg" alt=""></div>
-  </div>
-
-  
-  
-  
-  <!-- <div class="container">
-
-
-  <section id="sectionPin">
-    <div class="pin-wrap">
-      <h2>Photos</h2>
-      <img src="Image1.jpg" alt="">
-      <img src="Image2.JPG" alt="">
-      <img src="Image3.JPG" alt="">
-      <img src="Image4.JPG" alt="">
-      <img src="Image5.JPG" alt="">
-      <img src="Image6.JPG" alt="">
-
+      <a href="Home.html" class="myButton">Home</a>
+      <button type="Photos" class="myButton">Photos</button>
     </div>
-</div> -->
 
+    <div class="button right-buttons">
+      <a href="About.html" class="myButton">About</a>
+      <a href="Contact.html" class="myButton">Contact</a>
+      <a href="Menu.html" class="myButton">Menu</a>
+    </div>
 
+    <div class="logo">
+      <img src="logo.jpg" alt="HY Gallery" class="logo-icon">
+    </div>
+
+    <div class="photo-gallery">
+      <div class="frame"><img src="image1.jpg" alt=""><div class="caption">Taipei</div></div>
+      <div class="frame"><img src="image2.jpg" alt=""><div class="caption">Village</div></div>
+      <div class="frame"><img src="image3.jpg" alt=""><div class="caption">Beach</div></div>
+      <div class="frame"><img src="image4.jpg" alt=""><div class="caption">Dawn</div></div>
+      <div class="frame"><img src="image5.jpg" alt=""><div class="caption">Home</div></div>
+      <div class="frame"><img src="image6.jpg" alt=""><div class="caption">Shanghai</div></div>
+    </div>
+
+  
+  
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const gallery = document.querySelector('.photo-gallery');
+      const targetScroll = (865 + 50) * 2;  // 2nd photo position (width + gap * 1.5)
+      gallery.scrollLeft = targetScroll;
+    });
+    </script>
 
   </body>
 </html>

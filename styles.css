@@ -1,163 +1,214 @@
-html{
-    font-family: serif;
-    background: rgb(255, 255, 255);
-    margin: 0;
+    html{
+        font-family: serif;
+        background: rgb(255, 255, 255);
+        margin: 0;
+
+        
+    }
+
+
+    h1{
+        font-family: Noto Serif;
+        color:#254134;
+        font-size: 100px;
+        text-align: center;
+        padding-left: 5%;
+        padding-top: 45%
+
+    }
+
+    h5{
+        font-family: Noto Serif;
+        color:#254134;
+        font-size: 100px;
+        text-align: center;
+
+    }
+
+
+    h3{
+        text-align: center;
+        padding-top: 50%;
+        font-family: Noto Serif;
+        color:#597c6c;
+
+    }
+
+    h4{
+        text-align: center;
+        font-family: Noto Serif;
+        color:#597c6c;
+        font-size: 20px;
+
+    }
+
+    h2{
+        text-align: center;
+        font-family: Noto Serif;
+        color:#597c6c;
+        font-size: 40px;
+
+    }
+
+    .flexbox-grid{
+        display: flex;
+        gap: 10px; 
+    }
+
+    .column{
+        background-color: rgb(255, 255, 255);
+        padding: 300px 10px;
+        flex: 1;
+        text-align: center;
+    }
+
+
+    #col-large{
+        background-color: rgb(255, 255, 255);
+        flex-grow: 0.5; 
+    }
+
+
+    .logo {
+        position: fixed;
+        top: 20px;     
+        left: 20px;    
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    .button {
+        position: fixed;
+        top: 24px;
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        height: 32px;
+        font-family: serif;
+    }
+
+    .left-buttons {
+        left: 48px;
+    }
+
+    /* the look of right buttons. */
+    .right-buttons {
+        right: 48px;
+        gap: 1px;
+    }
+
+
+    /* cited and edited of website for buttons */
+
+    .myButton {
+        /* Color and background */
+        background-color: white;
+        color: #597c6c;
+        font-family: serif;
+        font-weight: bold;
+        
+        /* Spacing and size */
+        padding: 1px 26px 5px 26px;; /* Space between text and border */
+        height: 60px;
+        display: inline-flex;
+        font-size: 20px; /* Text size */
+        margin-left: 60px;
+        gap: 50px;
 
     
-}
+        /* Aesthetics */
+        border: none;
+        border-radius: 0px;
+        cursor: pointer;
+        text-decoration: none;
+        transition-duration: 0.4s;
+        letter-spacing: 0.05em;
+        position: relative; 
+        padding-bottom: 0px;
+        align-items: center;
+        justify-content: center;
 
+    }
 
-h1{
-    font-family: Noto Serif;
-    color:#254134;
-    font-size: 100px;
-    text-align: center;
-    padding-left: 5%;
-    padding-top: 45%
+    /* cited youtube video to learn how to hover with the underline feature. */
+    .myButton::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #254134;
+        transition: width 1.5s ease;
+    }
 
-}
+    .myButton:hover::after,
+    .myButton.active::after {
+        width: 100%;
+    }
 
-h3{
-    text-align: center;
-    padding-top: 50%;
-    font-family: Noto Serif;
-    color:#597c6c;
-
-}
-
-.flexbox-grid{
-    display: flex;
-    gap: 10px; 
-}
-
-.column{
-    background-color: rgb(255, 255, 255);
-    padding: 300px 10px;
-    flex: 1;
-    text-align: center;
-}
-
-
-#col-large{
-    background-color: rgb(255, 255, 255);
-    flex-grow: 0.5; 
-}
-
-
-.logo {
-  position: fixed;
-  top: 20px;     
-  left: 20px;    
-  width: 40px;
-  height: 40px;
-}
-
-.logo-icon {
-  width: 100%;
-  height: 100%;
-}
-
-.button {
-    position: fixed;
-    top: 24px;
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    height: 32px;
-    font-family: serif;
-}
-
-.left-buttons {
-    left: 48px;
-}
-
-/* the look of right buttons. */
-.right-buttons {
-    right: 48px;
-    gap: 1px;
-}
-
-
-/* cited and edited of website for buttons */
-  
-.myButton {
-    /* Color and background */
-    background-color: white;
-    color: #597c6c;
-    font-family: serif;
-    font-weight: bold;
-    
-    /* Spacing and size */
-    padding: 1px 26px 5px 26px;; /* Space between text and border */
-    height: 60px;
-    display: inline-flex;
-    font-size: 20px; /* Text size */
-    margin-left: 60px;
-    gap: 50px;
-
-    
-    /* Aesthetics */
-    border: none;
-    border-radius: 0px;
-    cursor: pointer;
-    text-decoration: none;
-    transition-duration: 0.4s;
-    letter-spacing: 0.05em;
-    position: relative; 
-    padding-bottom: 0px;
-    align-items: center;
-    justify-content: center;
-
-}
-
-/* cited youtube video to learn how to hover with the underline feature. */
-.myButton::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #254134;
-  transition: width 1.5s ease;
-}
-
-.myButton:hover::after,
-.myButton.active::after {
-  width: 100%;
-}
-
-.right-buttons {
-  right: 48px; 
-}
+    .right-buttons {
+        right: 48px; 
+    }
 
 
 
-.photo-gallery {
-  display: flex;
-  gap: 10px;                    /* Smaller gaps */
-  margin-left: 10px;
-  justify-content: center;
-  align-items: center;
-  padding: 120px 100px;           /* More vertical space */
-}
-
-.frame {
-  display: flex;
-  gap: 20px;                    /* Smaller gaps */
-  justify-content: center;
-  padding: 60px 40px;           /* More vertical space */
-  width: 80%;           /* Narrower container */
-  height: 300px;
-  margin: 0 auto;
-  max-width: auto;
-}
+    .photo-gallery {
+        display: flex;
+        gap: 100px;                    /* Smaller gaps */
+        margin: 0;
+        padding: 300px 500px;          /* More vertical space */
+        overflow-x: auto;                           
+        scrollbar-width: thin;   
+        scroll-behavior: smooth;
+        scrollbar-width: none;  /* Cited */             
+        -ms-overflow-style: none;               
+    }
 
 
+    .frame {
+        flex: 0 0 780px;                /* bigger photos */
+        height: 500px;                  /* Taller */
+        overflow: hidden;
+        position: relative;
+        margin: 20px;            /* Space around */
+    }
+
+    .frame img {
+        width: 680px;
+        height:400px;
+        object-fit: cover;
+        transition: all 0.8s ease;
+    }
+
+    .frame:hover {                   /* Cited */
+        transform: translateY(-8px);
+    }
+
+    .frame:hover img {         /* Cited */
+        transform: scale(0.9);
+    }
 
 
 
+    .caption {
+        position: absolute;
+        left: 310px;
+        background: white;
+        color: #254134;
+        padding: -10px;
+        font-family: serif;
+        font-size: 21px;
+        font-weight: bold;
+        opacity: 0;
+    }
 
-
-
-/* parallax scroll effect */
+    .frame:hover .caption {
+        opacity: 1;                 /* Show on hover */
+    }
+    /* parallax scroll effect */

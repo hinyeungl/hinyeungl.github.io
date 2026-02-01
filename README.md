@@ -14,3 +14,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#:~:t
 https://www.youtube.com/watch?v=psLRMRaBLI4 - Youtube tutorial
 
 https://codepen.io/cameronknight/pen/qBNvrRQ - Horizontal scroll
+
+
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp - How to disable scrollbar css 
+https://www.geeksforgeeks.org/css/how-to-zoom-an-image-on-mouse-hover-using-css/ - How to hover image and has an zoom in animation
