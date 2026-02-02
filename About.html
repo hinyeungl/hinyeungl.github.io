@@ -7,6 +7,11 @@
 
   <body>
   
+  <div class="about-content">
+    <h1>ABOUT ME</h1>
+    <p>I'm a student in Hong Kong. I capture architecture, landscapes, and urban moments through photography. Currently studying in ISF.</p>
+  </div>
+
   <div class="button left-buttons">
     <a href="index.html" class="myButton">Home</a>
     <a href="Photos.html" class="myButton">Photos</a>
@@ -15,15 +20,31 @@
   <div class="button right-buttons">
     <button type="About" class="myButton">About</button>
     <a href="Contact.html" class="myButton">Contact</a>
-    <a href="Menu.html" class="myButton">Menu</a>
+    <button type="Menu" class="myButton">Menu</button>
+  </div>
+
+  <div class="menu-trigger" onclick="toggleMenu()">
+    <alt="Menu" class="menu-icon">
   </div>
 
   <div class="logo">
     <img src="logo.jpg" alt="HY Gallery" class="logo-icon">
   </div>
-
-
   
+  <nav class="slide-menu" id="slideMenu">
+    <a href="index.html" class="menu-link">Home</a>
+    <a href="photos.html" class="menu-link">Photos</a>
+    <a href="About.html" class="menu-link">About</a>
+    <a href="Contact.html" class="menu-link">Contact</a>
+  </nav>
+  
+
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('slideMenu').classList.toggle('active');
+    }
+  </script>
 
 
 

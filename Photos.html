@@ -6,21 +6,31 @@
   </head>
 
   <body>
-  
     <div class="button left-buttons">
-      <a href="index.html" class="myButton">Home</a>
-      <button type="Photos" class="myButton">Photos</button>
+      <a href="index.html" class="myButton">Home</button>
+      <button type="" class="myButton"></a>
+    </div>
+    
+    <div class="button right-buttons">
+      <a href="" class="myButton"> </a>
+      <a href="" class="myButton"> </a>
+      <button type="" class="myButton">Menu</a>
     </div>
 
-    <div class="button right-buttons">
-      <a href="About.html" class="myButton">About</a>
-      <a href="Contact.html" class="myButton">Contact</a>
-      <a href="Menu.html" class="myButton">Menu</a>
+    <div class="menu-trigger" onclick="toggleMenu()">
+      <alt="Menu" class="menu-icon">
     </div>
 
     <div class="logo">
       <img src="logo.jpg" alt="HY Gallery" class="logo-icon">
     </div>
+
+    <nav class="slide-menu" id="slideMenu">
+      <a href="index.html" class="menu-link">Home</a>
+      <a href="photos.html" class="menu-link">Photos</a>
+      <a href="About.html" class="menu-link">About</a>
+      <a href="Contact.html" class="menu-link">Contact</a>
+    </nav>
 
     <div class="photo-gallery">
       <div class="frame"><img src="Image1.JPG" alt=""><div class="caption">Taipei</div></div>
@@ -31,14 +41,22 @@
       <div class="frame"><img src="Image6.jpg" alt=""><div class="caption">Shanghai</div></div>
     </div>
 
-  
-  
+    <div class="fixed-text">HY GALLERY</div>
+
+    <!-- cited -->
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const gallery = document.querySelector('.photo-gallery');
-      const targetScroll = (865 + 50) * 2;  // 2nd photo position (width + gap * 1.5)
-      gallery.scrollLeft = targetScroll;
-    });
+      document.addEventListener('DOMContentLoaded', function() {
+        const gallery = document.querySelector('.photo-gallery');
+        const targetScroll = (853 + 50) * 2;  // 2nd photo position (width + gap * 1.5)
+        gallery.scrollLeft = targetScroll;
+      });
+    </script>
+
+    <!-- cited -->
+    <script>
+      function toggleMenu() {
+        document.getElementById('slideMenu').classList.toggle('active');
+      }
     </script>
 
   </body>
