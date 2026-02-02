@@ -1,4 +1,4 @@
-# emmaqbrown.github.io
+# hinyeungl.github.io
 
 My personal site.
 
@@ -10,8 +10,8 @@ My personal site.
 
 - [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - center content and create structure to the site
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#:~:text=Custom%20values,formenctype - Buttons
-https://www.youtube.com/watch?v=psLRMRaBLI4 - Youtube tutorial
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button#:~:text=Custom%20values,formenctype - To add the buttons
+https://www.youtube.com/watch?v=psLRMRaBLI4 - Youtube tutorial for how to create an underline hover effect using css and html
 
 https://codepen.io/cameronknight/pen/qBNvrRQ - Horizontal scroll
 
