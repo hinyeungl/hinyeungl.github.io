@@ -5,7 +5,7 @@
 
         
     }
-
+    /* Text Size, font, paddings, positions from line 10 - 76 */
 
     h1{
         font-family: Noto Serif;
@@ -14,6 +14,16 @@
         text-align: center;
         padding-left: 5%;
         padding-top: 45%
+
+    }
+
+    .index-text h1{
+        font-family: Noto Serif;
+        color:#254135;
+        font-size: 100px;
+        text-align: center;
+        padding-left: 2.5%;
+        padding-top: 22.5%
 
     }
 
@@ -150,7 +160,7 @@
 
     }
 
-    /* cited youtube video to learn how to hover with the underline feature. */
+    /* Cited youtube video to learn how to hover with the underline feature. */
     .myButton::after {
         content: "";
         position: absolute;
@@ -177,7 +187,7 @@
         display: flex;
         gap: 100px;                    /* Smaller gaps */
         margin: 0;
-        padding: 300px 500px;          /* More vertical space */
+        padding: 200px 500px;          /* More vertical space */
         overflow-x: auto;                           
         scrollbar-width: thin;   
         scroll-behavior: smooth;
@@ -193,7 +203,7 @@
         position: relative;
         margin: 20px;            /* Space around */
     }
-
+    /* Frame of the image */
     .frame img {
         width: 680px;
         height:400px;
@@ -205,6 +215,7 @@
         transform: translateY(-8px);
     }
 
+    /* The image has a movement and is shrinked to 0.9 of its original size when you hover */
     .frame:hover img {         /* Cited */
         transform: scale(0.9);
     }
@@ -224,7 +235,7 @@
     }
 
     .frame:hover .caption {
-        opacity: 1;                 /* Show on hover */
+        opacity: 1;                 /* Show captions when you are hovering on the photo */
     }
 
 
@@ -250,6 +261,7 @@
         height: 40px;
     }
 
+    /* Slide menu positions */
     .slide-menu {
         position: fixed;
         top: 0; 
@@ -264,6 +276,7 @@
         transition: right 0.8s ease;
     }
 
+    /* Cited, to have the slide menu active */
     .slide-menu.active { right: 0; }
 
     .menu-link {
@@ -285,6 +298,7 @@
     z-index: 1;  /* Lower than menu */
     }
 
+    /* Size information of the content */
     .about-content {
         max-width: 700px;
         margin: 0px auto;
@@ -299,4 +313,31 @@
         font-size: 24px;
         line-height: 1.6;
         letter-spacing: 0.05em;
+    }
+
+    .start-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .start-button {
+        font-family: serif;
+        color: #254134;
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 20px 80px;
+        margin-left: 750px;
+        border: 3px solid #254134;
+        border-radius: 0;
+        transition: all 0.4s;
+        letter-spacing: 0.1em;
+    }
+
+    /* When hovering the button turns to dark green */
+    .start-button:hover {
+        background: #254134;
+        color: white;
     }

@@ -6,17 +6,19 @@
   </head>
 
   <body>
+    <!-- Buttons on the left -->
     <div class="button left-buttons">
-      <a href="index.html" class="myButton">Home</button>
-      <button type="" class="myButton"></a>
+      <a href="Home.html" class="myButton">Home</button>
     </div>
     
+    <!-- Buttons on the right -->
     <div class="button right-buttons">
-      <a href="" class="myButton"> </a>
-      <a href="" class="myButton"> </a>
+      <button type="" class="myButton"></a>
+      <button type="" class="myButton"></a>
       <button type="" class="myButton">Menu</a>
     </div>
-
+    
+    <!-- Button to access side menu -->
     <div class="menu-trigger" onclick="toggleMenu()">
       <alt="Menu" class="menu-icon">
     </div>
@@ -25,13 +27,15 @@
       <img src="logo.jpg" alt="HY Gallery" class="logo-icon">
     </div>
 
+    <!-- Slide menu to access the different pages-->
     <nav class="slide-menu" id="slideMenu">
-      <a href="index.html" class="menu-link">Home</a>
+      <a href="Home.html" class="menu-link">Home</a>
       <a href="Photos.html" class="menu-link">Photos</a>
       <a href="About.html" class="menu-link">About</a>
       <a href="Contact.html" class="menu-link">Contact</a>
     </nav>
 
+    <!-- Photos -->
     <div class="photo-gallery">
       <div class="frame"><img src="Image1.JPG" alt=""><div class="caption">Taipei</div></div>
       <div class="frame"><img src="Image2.JPG" alt=""><div class="caption">Village</div></div>
@@ -41,9 +45,10 @@
       <div class="frame"><img src="Image6.jpg" alt=""><div class="caption">Shanghai</div></div>
     </div>
 
+    <!-- Bottom text -->
     <div class="fixed-text">HY GALLERY</div>
 
-    <!-- cited -->
+    <!-- cited, to center the images everytime you reload page instead of starting on the most left/right -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const gallery = document.querySelector('.photo-gallery');
@@ -52,7 +57,7 @@
       });
     </script>
 
-    <!-- cited -->
+    <!-- cited, to have the animation of sliding the menu -->
     <script>
       function toggleMenu() {
         document.getElementById('slideMenu').classList.toggle('active');

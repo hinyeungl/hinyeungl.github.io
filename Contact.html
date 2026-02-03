@@ -6,18 +6,19 @@
   </head>
 
   <body>
-  
+  <!-- Buttons on the left -->
   <div class="button left-buttons">
-    <a href="index.html" class="myButton">Home</a>
+    <a href="Home.html" class="myButton">Home</a>
     <a href="Photos.html" class="myButton">Photos</button>
   </div>
 
+  <!-- Buttons on the right -->
   <div class="button right-buttons">
     <a href="About.html" class="myButton">About</a>
     <button type="Contact" class="myButton">Contact</button>
     <button type="Menu" class="myButton">Menu</button>
   </div>
-
+<!-- Menu trigger -->
   <div class="menu-trigger" onclick="toggleMenu()">
     <alt="Menu" class="menu-icon">
   </div>
@@ -27,12 +28,13 @@
   </div>
 
   <nav class="slide-menu" id="slideMenu">
-    <a href="index.html" class="menu-link">Home</a>
+    <a href="Home.html" class="menu-link">Home</a>
     <a href="Photos.html" class="menu-link">Photos</a>
     <a href="About.html" class="menu-link">About</a>
     <a href="Contact.html" class="menu-link">Contact</a>
   </nav>
 
+  <!-- Contact information -->
   <div class="contact">
     <h5>Contact</h5>
   
@@ -43,6 +45,7 @@
     <h4>Grade: 10</h4>
   </div>
 
+  <!-- Script for menu slidebar -->
   <script>
     function toggleMenu() {
       document.getElementById('slideMenu').classList.toggle('active');
